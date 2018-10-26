@@ -8,9 +8,9 @@ The paper has been accepted in NIPS 2018. An [arXiv pre-print](https://arxiv.org
 ## Dependences 
 - Python2.7, NumPy, SciPy, NVIDIA GPU, Tensorflow 1.4
 - **Dataset:** 
- - MNIST
- - SVHN(http://ufldl.stanford.edu/housenumbers/)
- - LSUN(bedroom, kitchen, church outdoor, tower)(http://lsun.cs.princeton.edu/2017/)
+  - MNIST
+  - SVHN(http://ufldl.stanford.edu/housenumbers/)
+  - LSUN(bedroom, kitchen, church outdoor, tower)(http://lsun.cs.princeton.edu/2017/)
  
 ## Usage
 
@@ -24,7 +24,7 @@ For testing:
 - `python mergan.py --dataset mnist --test  --result_path result/mnist_RA_1e_3/`
 - `python joint.py --dataset mnist --test --result_path result/mnist_joint/`
 
-## Result
+## Results
 ### MNIST
 ![MerGAN](./imgs/mnist.png)
 
