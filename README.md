@@ -25,7 +25,7 @@ For testing:
 
 ## References 
 - \[1\] 'Improved Training of Wasserstein GANs' by Ishaan Gulrajani et. al, https://arxiv.org/abs/1704.00028, (https://github.com/igul222/improved_wgan_training)[code] 
-- \[2\] 'GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium' by Martin Heusel  et. al, https://arxiv.org/abs/1704.00028, (https://github.com/bioinf-jku/TTUR)[code]
+- \[2\] 'Transferring GANs generating images from limited data' by Yaxing Wang  et. al, https://arxiv.org/abs/1805.01677, (https://github.com/yaxingwang/Transferring-GANs)[code]
 
 ## Citation
 
