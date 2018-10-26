@@ -25,7 +25,7 @@ For testing:
 
 ## References 
 - \[1\] 'Improved Training of Wasserstein GANs' by Ishaan Gulrajani et. al, https://arxiv.org/abs/1704.00028, (https://github.com/igul222/improved_wgan_training)[code] 
-- \[2\] 'GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium' by Martin Heusel  et. al, https://arxiv.org/abs/1704.00028
+- \[2\] 'GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium' by Martin Heusel  et. al, https://arxiv.org/abs/1704.00028, (https://github.com/bioinf-jku/TTUR)[code]
 
 ## Citation
 
@@ -34,7 +34,7 @@ Please cite our paper if you are inspired by the idea.
 ```
 @inproceedings{chenshen2018meRgan,
 title={Memory Replay GANs: learning to generate images from new categories without forgetting},
-author={Wu, Chenshe and Herranz, Luis and Liu, Xialei and Wang, Yaxing and van de Weijer, Joost and Raducanu, Bogdan },
+author={Wu, Chenshe and Herranz, Luis and Liu, Xialei and Wang, Yaxing and van de Weijer, Joost and Raducanu, Bogdan},
 booktitle={Conference on Neural Information Processing Systems (NIPS)},
 year={2018}
 }

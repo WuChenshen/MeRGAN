@@ -66,12 +66,12 @@ def disjoint_svhn(svhn,nums):
 # load MNIST dataset with added padding so is 32x32
 def load_svhn_32x32(data_path, verbose=True):
 
-    train_data = sio.loadmat(data_path + 'train_32x32.mat')
+    train_data = sio.loadmat(os.path.join(data_path, 'train_32x32.mat'))
     train_images = train_data['X'].transpose([3,2,0,1])/255.   # from HWCN to NCHW
     train_labels = train_data['y'].squeeze()
     train_labels[train_labels==10]=0  # Change label 10 to 0 for digit 0
 
-    test_data = sio.loadmat(data_path + 'test_32x32.mat')
+    test_data = sio.loadmat(os.path.join(data_path, 'test_32x32.mat'))
     test_images = test_data['X'].transpose([3,2,0,1])/255.   # from HWCN to NCHW
     test_labels = test_data['y'].squeeze()
     test_labels[test_labels==10]=0  # Change label 10 to 0 for digit 0

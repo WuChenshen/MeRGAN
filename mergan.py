@@ -57,7 +57,7 @@ if DATASET == 'lsun':
     NUM_CLASS = 4
     all_classes = ['bedroom','kitchen','church_outdoor','tower']
     REDUCE_BATCH = False
-    DATASET_DIR = '/datatmp/dataset/LSUN_10_100000_old'
+    DATASET_DIR = 'dataset/lsun'
 elif DATASET == 'mnist':
     N_PIXELS = 32
     N_COLORS = 1
@@ -223,10 +223,6 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as session:
                     predicted_labels, predicted_probality = model.test(_samples)
                     _acc = float(np.sum(np.equal(predicted_labels,labelmap[label]))) / BATCH_SIZE
                     acc += _acc/repeat
-                    # if CALC_FID:
-                        # frm = BATCH_SIZE*i 
-                        # to = (i +1)*BATCH_SIZE 
-                    #     samples_set[frm:to] =  _samples
                 print('Task: {}   Class: {}   Accuracy: {}'.format(task + 1, all_classes[label], acc))
                 ave_acc += acc / (task+1)
             print('Average accuracy: {}'.format(ave_acc))
