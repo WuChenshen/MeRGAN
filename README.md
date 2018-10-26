@@ -2,15 +2,17 @@ Memory Replay GANs: learning to generate images from new categories without forg
 =====================================
 The paper has been accepted in NIPS 2018. An [arXiv pre-print](https://arxiv.org/abs/1809.02058) version is available. 
 
-## Abstract
-Previous works on sequential learning address the problem of forgetting in discriminative models. In this paper we consider the case of generative models. In particular, we investigate generative adversarial networks (GANs) in the task of learning new categories in a sequential fashion. We first show that sequential fine tuning renders the network unable to properly generate images from previous categories (i.e. forgetting). Addressing this problem, we propose Memory Replay GANs (MeRGANs), a conditional GAN framework that integrates a memory replay generator. We study two methods to prevent forgetting by leveraging these replays, namely joint training with replay and replay alignment. Qualitative and quantitative experimental results in MNIST, SVHN and LSUN datasets show that our memory replay approach can generate competitive images while significantly mitigating the forgetting of previous categories
-
+## Method
+![MerGAN](./imgs/MerGAN.png)
 
 ## Dependences 
 - Python2.7, NumPy, SciPy, NVIDIA GPU, Tensorflow 1.4
-- **Dataset:** MNIST, SVHN(http://ufldl.stanford.edu/housenumbers/), LSUN(bedroom, kitchen, church outdoor, tower)(http://lsun.cs.princeton.edu/2017/) or your dataset 
-
-## Models
+- **Dataset:** 
+ - MNIST
+ - SVHN(http://ufldl.stanford.edu/housenumbers/)
+ - LSUN(bedroom, kitchen, church outdoor, tower)(http://lsun.cs.princeton.edu/2017/)
+ 
+## Usage
 
 For training:
 - `python mergan.py --dataset mnist --result_path mnist_SFT/` Sequential Fine Tuning
@@ -22,6 +24,12 @@ For testing:
 - `python mergan.py --dataset mnist --test  --result_path result/mnist_RA_1e_3/`
 - `python joint.py --dataset mnist --test --result_path result/mnist_joint/`
 
+## Result
+### MNIST
+![MerGAN](./imgs/mnist.png)
+
+### LSUN
+![MerGAN](./imgs/lsun.png)
 
 ## References 
 - \[1\] 'Improved Training of Wasserstein GANs' by Ishaan Gulrajani et. al, https://arxiv.org/abs/1704.00028, (https://github.com/igul222/improved_wgan_training)[code] 
@@ -30,14 +38,11 @@ For testing:
 ## Citation
 
 Please cite our paper if you are inspired by the idea.
-
 ```
-@inproceedings{chenshen2018meRgan,
+@inproceedings{chenshen2018mergan,
 title={Memory Replay GANs: learning to generate images from new categories without forgetting},
 author={Wu, Chenshe and Herranz, Luis and Liu, Xialei and Wang, Yaxing and van de Weijer, Joost and Raducanu, Bogdan},
 booktitle={Conference on Neural Information Processing Systems (NIPS)},
 year={2018}
 }
-
-
-
+```
