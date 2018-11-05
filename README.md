@@ -1,6 +1,7 @@
 Memory Replay GANs: learning to generate images from new categories without forgetting
 =====================================
-The paper has been accepted in NIPS 2018. An [arXiv pre-print](https://arxiv.org/abs/1809.02058) version is available. 
+The paper has been accepted in NIPS 2018. An [arXiv pre-print](https://arxiv.org/abs/1809.02058) version and a [post](http://www.lherranz.org/2018/10/29/mergans) are available.
+
 
 ## Method
 ![MerGAN](./imgs/MerGAN.png)
@@ -26,7 +27,7 @@ For testing:
 
 ## Results
 ### MNIST
-![MerGAN](./imgs/mnist.png)
+![MerGAN](./imgs/mnist.gif)
 
 ### LSUN
 ![MerGAN](./imgs/lsun.png)
